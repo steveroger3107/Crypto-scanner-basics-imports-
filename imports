@@ -1,0 +1,9 @@
+import requests, talib, threading, timing, time, csv
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from mpl_finance import candlestick_ohlc as candles
+import matplotlib.dates as mdates
+from db import Session, Signals
+from flask import Flask, request, url_for, jsonify
+from flask_sqlalchemy_session import flask_scoped_session
